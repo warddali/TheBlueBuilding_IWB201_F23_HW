@@ -1,0 +1,276 @@
+@font-face {
+    font-family: "Tajawal";
+    src: url("Tajawal-Regular.woff2") format("woff2"),
+         url("Tajawal-Regular.woff") format("woff");
+  }
+  body {
+    font-family: "Tajawal", Arial, sans-serif;
+  }
+    /* "Navbar"مواصفات ال */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    background-color: #006eff;
+  }
+  
+  nav .logo {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    color: #ffffff;
+  }
+  
+  nav .bars-menu {
+    display: none;
+  }
+  nav .logo h4 {
+    font-family: "Lalezar", cursive;
+  }
+  
+  nav .nav-items {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  nav .nav-items .nav-item {
+    padding: 0 1rem;
+  }
+  
+  nav .nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+  }
+  
+  nav .nav-link:hover {
+    color:#0004ff;
+  }
+
+  div.headerimg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 5rem;
+  }
+  .img{
+    height: 50vh;
+    width: 1900px;
+  }
+.hidden{
+    display: none;
+}
+
+.show {
+    display: table-row;
+  }
+h1 {
+    text-align: center; 
+    color: blue; 
+  }
+  
+ table{
+    margin: 0 auto;
+    border: 1px solid blue;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  caption {
+    font-size: 22px;
+    color: #333;
+    font-family: "Tahoma", sans-serif;
+    text-align: center;
+    padding: 15px;
+    margin: 25px 0;
+    border-bottom: 2px solid #0004ff;
+    background-color: #f8f8f8;
+  }
+  
+ th {
+    font-family: "Tajawal", Arial, sans-serif;
+
+    text-align: center;
+    padding: 10px;
+    background-color: blue;
+    font-weight: bold;
+    border: 1px solid #006eff;
+    color: aliceblue;
+}
+  
+   td {
+    font-family: "Tajawal", Arial, sans-serif;
+
+    text-align: center; 
+    padding: 5px;
+    border: 1px solid #00c7fe;
+  
+}
+
+  /* مواصفات زر المتابعة */
+    #con{
+    display: table-cell;
+    margin: 0px auto; /* هامش حول الزر */
+    padding: 10px 20px; /* مساحة داخلية للزر */
+    background-color: #18aecc; /* لون خلفية الزر أخضر */
+    color: white; /* لون نص الزر أبيض */
+    border: none; /* إزالة إطار الزر */
+    cursor: pointer; /* مؤشر الماوس عند تحريكه فوق الزر */
+    text-align: center; 
+    position: absolute;
+    left: 550px;
+   
+}
+  
+  /* زر المتابعة عند الضغط عليه */
+  .properties .continue:hover {
+    background-color: #013647; /* لون خلفية الزر عند الضغط */
+  }
+  
+  /* مواصفات تفاصيل العقار */
+ 
+  
+  /* مواصفات زر عرض تفاصيل العقار */
+  .properties .B11,
+  .properties .B12,
+  .properties .B13,
+  .properties .B14,
+  .properties .B15,
+  .properties .B16,
+  .properties .B17,
+  .properties .B18,
+  .properties .B19,
+  .properties .B20 {
+    display: block; /* عرض زر عرض تفاصيل العقار */
+    margin: 10px auto; /* هامش حول الزر */
+    padding: 5px 10px; /* مساحة داخلية للزر */
+    background-color: #008CBA; /* لون خلفية الزر أزرق */
+    color: white; /* لون نص الزر أبيض */
+    border: none; /* إزالة إطار الزر */
+    cursor: pointer; /* مؤشر الماوس عند تحريكه فوق الزر */
+  }
+  
+
+ 
+    #row01 span,
+    #row1 span,
+    #row2 span,
+    #row3 span,
+    #row4 span,
+    #row5 span,
+    #row6 span,
+    #row7 span,
+    #row8 span,
+    #row9 span,
+    #row10 span {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 88px;
+    background-color: #eee;
+    font-weight: bold;
+    font-family: "Tajawal", Arial, sans-serif; /* خط مناسب للغة العربية والإنجليزية */
+  }
+  
+  /* مواصفات الصور */
+  #row01 img,
+  #row1 img,
+  #row2 img,
+  #row3 img,
+  #row4 img,
+  #row5 img,
+  #row6 img,
+  #row7 img,
+  #row8 img,
+  #row9 img,
+  #row10 img
+   {
+    margin: 50px; /* مسافة بين الصور */
+    border: 1px solid #ccc; /* خط فاصل حول الصور */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ظلال خفيفة حول الصور */
+    cursor: pointer; /* مؤشر الماوس عند تحريكه فوق الصور */
+  }
+  
+.notes{
+    color: #001e48;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+  
+a {
+    color: #007bff; /* لون أزرق فاتح */
+    text-decoration: none; /* إزالة خط التأكيد */
+    font-family: "Arial", sans-serif;
+    font-size: 36px;
+    padding: 2px 2px;
+    margin: 2px;
+  }
+  
+  a:hover {
+    color: #0056b3; 
+  }
+  
+      /* مواصفات طلب التقديم */
+
+#application-form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 600px;
+    left: 330px;
+    
+  }
+  
+  #application-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  #application-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  #application-form input[type="text"],
+  #application-form input[type="number"],
+  #application-form input[type="date"],
+  #application-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+  
+  #application-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #appl{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  margin: 0;
+  }

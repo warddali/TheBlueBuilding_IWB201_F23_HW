@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- تحديد مجموعة الأحرف للصفحة -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- لجعل الصفحة متجاوبة مع مختلف الشاشات -->
+    <title>Properties.html</title> <!-- عنوان الصفحة -->
+    <link rel="stylesheet" href="/Style.css"> <!-- ربط ملف التنسيق CSS -->
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <h4>BB</h4> <!-- شعار الموقع -->
+        </div>
+        <div class="bars-menu">
+            <i class="fas fa-bars"></i> <!-- أيقونة القائمة للهواتف المحمولة -->
+        </div>
+        <ul class="nav-items"> <!-- قائمة الروابط في شريط التنقل -->
+            <li class="nav-item">
+                <a href="/home.html" class="nav-link">الصفحة الرئيسية</a>
+            </li>
+            <li class="nav-item">
+                <a href="/AboutUs.html" class="nav-link">عن الشركة</a>
+            </li>
+            <li class="nav-item">
+                <a href="/Properties.html" class="nav-link">العروض</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="properties">
+        <table id="t">
+            <tr>
+                <th> المدينة </th> <!-- عنوان العمود: المدينة -->
+                <th> تفاصيل </th> <!-- عنوان العمود: تفاصيل -->
+                <th> الإيجار الشهري </th> <!-- عنوان العمود: الإيجار الشهري -->
+                <th> إظهار التفاصيل</th> <!-- عنوان العمود: إظهار التفاصيل -->
+                <th> اختيار </th> <!-- عنوان العمود: اختيار -->
+            </tr>
+            <tr>
+                <td> حمص </td> <!-- مدينة حمص -->
+                <td> شقة 4 غرف 200 متر </td> <!-- تفاصيل الشقة -->
+                <td> 400,000 </td> <!-- الإيجار الشهري -->
+                <td><input type="checkbox" id="checkbox1">  </td> <!-- خيار إظهار التفاصيل -->
+                <td><input type="radio" id="select-option" name="select" onchange="checkRadio()"></td> <!-- خيار اختيار -->
+            </tr>
+            <tr id="row1">
+                <td colspan="5">
+                    <p>
+                        <span>المنطقة:وادي الذهب </span>
+                        <span>متوفر: كراج </span>
+                        <span>الطابق الأول </span>
+                        <span>مفروشة </span>
+                        <span> ملكية: كاتب عدل</span> 
+                    </p>
+                    <img src="/pictures/حمص 1.jpg" width="150" alt=""> <!-- صورة 1 للشقة -->
+                    <img src="/pictures/حمص 2.jpg" width="150" alt=""> <!-- صورة 2 للشقة -->
+                    <img src="/pictures/حمص 3.webp" width="150" alt=""> <!-- صورة 3 للشقة -->
+                </td>
+            </tr>
+            
+            <tr>
+                <td> دمشق </td> <!-- مدينة دمشق -->
+                <td> شقة 4 غرف 100 متر </td> <!-- تفاصيل الشقة -->
+                <td> 400,000 </td> <!-- الإيجار الشهري -->
+                <td> <input type="checkbox" id="checkbox2"> </td> <!-- خيار إظهار التفاصيل -->
+                <td><input type="radio" id="select-option" name="select" onchange="checkRadio()"></td> <!-- خيار اختيار -->
+            </tr>
+            <tr id="row2">
+                <td colspan="5">
+                    <p>
+                        <span>المنطقة:الدويلعة </span>
+                        <span>متوفر: كراج </span>
+                        <span>الطابق الثاني </span>
+                        <span>مفروشة </span>
+                        <span> ملكية: طابو</span> 
+                    </p>
+                    <img src="/pictures/دمشق 1.webp" width="150" alt=""> <!-- صورة 1 للشقة -->
+                    <img src="/pictures/دمشق 2.avif" width="150" alt=""> <!-- صورة 2 للشقة -->
+                    <img src="/pictures/دمشق 3.jpg" width="150" alt=""> <!-- صورة 3 للشقة -->
+                </td>
+            </tr>
+            
+            <tr>
+                <td> حلب </td> <!-- مدينة حلب -->
+                <td> دكان مساحة 60 متر </td> <!-- تفاصيل الدكان -->
+                <td> 650,000 </td> <!-- الإيجار الشهري -->
+                <td> <input type="checkbox" id="checkbox3"> </td> <!-- خيار إظهار التفاصيل -->
+                <td><input type="radio" id="select-option" name="select" onchange="checkRadio()"></td> <!-- خيار اختيار -->
+            </tr>
+            <tr id="row3">
+                <td colspan="5">
+                    <p>
+                        <span>المنطقة:شارع النيل </span>
+                        <span>متوفر: قبو </span>
+                        <span>الطابق الأرضي </span>
+                        <span>مخدم </span>
+                        <span> ملكية: من المالك</span> 
+                    </p>
+                    <img src="/pictures/حلب 1.jpg" width="150" alt=""> <!-- صورة 1 للدكان -->
+                    <img src="/pictures/حلب 2.jpg" width="150" alt=""> <!-- صورة 2 للدكان -->
+                    <img src="/pictures/حلب 3.jpg" width="150" alt=""> <!-- صورة 3 للدكان -->
+                </td>
+            </tr>
+            
+            <tr>
+                <td> حمص </td> <!-- مدينة حمص -->
+                <td> شقة 6 غرف 350 متر </td> <!-- تفاصيل الشقة -->
+                <td> 800,000 </td> <!-- الإيجار الشهري -->
+                <td> <input type="checkbox" id="checkbox4"> </td> <!-- خيار إظهار التفاصيل -->
+                <td><input type="radio" id="select-option" name="select" onchange="checkRadio()"></td> <!-- خيار اختيار -->
+            </tr>
+            <tr id="row4">
+                <td colspan="5">
+                    <p>
+                        <span>المنطقة:السوق </span>
+                        <span>متوفر: ملحق </span>
+                        <span>الطابق الرابع </span>
+                        <span>مفروشة </span>
+                        <span> ملكية: كاتب عدل</span> 
+                    </p>
+                    <img src="/pictures/حمص 4.webp" width="150" alt=""> <!-- صورة 1 للشقة -->
+                    <img src="/pictures/حمص 5.jpg" width="150" alt=""> <!-- صورة 2 للشقة -->
+                    <img src="/pictures/حمص 6.png" width="150" alt=""> <!-- صورة 3 للشقة -->
+                </td>
+            </tr>
+            
+            <tr>
+                <td> طرطوس </td> <!-- مدينة طرطوس -->
+                <td> شقة 3 غرف 160 متر </td> <!-- تفاصيل الشقة -->
+                <td> 600,000 </td> <!-- الإيجار الشهري -->
+                <td> <input type="checkbox" id="checkbox5"> </td> <!-- خيار إظهار التفاصيل -->
+                <td><input type="radio" id="select-option" name="select" onchange="checkRadio()"></td> <!-- خيار اختيار -->
+            </tr>
+            <tr id="row5">
+                <td colspan="5">
+                    <p>
+                        <span>المنطقة:شارع الثورة </span>
+                        <span>متوفر: كراج </span>
+                        <span>الطابق الثالث </span>
+                        <span>إكساء كامل </span>
+                        <span> ملكية: من المالك</span> 
+                    </p>
+                    <img src="/pictures/طرطوس 1.avif" width="150" alt=""> <!-- صورة 1 للشقة -->
+                    <img src="/pictures/طرطوس 2.webp" width="150" alt=""> <!-- صورة 2 للشقة -->
+                    <img src="/pictures/طرطوس 3.jpg" width="150" alt=""> <!-- صورة 3 للشقة -->
+                </td>
+            </tr>
+            
+            <tr>
+                <td> صافيتا </td> <!-- مدينة صافيتا -->
+                <td> أرض زراعية 1500 متر </td> <!-- تفاصيل الأرض -->
+                <td> 1,000,000 </td> <!-- الإيجار الشهري -->
+                <td> <input type="checkbox" id="checkbox6"> </td> <!-- خيار إظهار التفاصيل -->
+                <td><input type="radio" id="select-option" name="select" onchange="checkRadio()"></td> <!-- خيار اختيار -->
+            </tr>
+            <tr id="row6">
+                <td colspan="5">
+                    <p>
+                        <span>المنطقة:شمال مبنى المصالح العقارية </span>
+                        <span>متوفر: شبكة ري بالتنقيط </span>
+                        <span> ملكية: من المالك</span> 
+                    </p>
+                    <img src="/pictures/صافيتا 1.jpeg" width="150" alt=""> <!-- صورة 1 للأرض -->
+                    <img src="/pictures/صافيتا 2.jpg" width="150" alt=""> <!-- صورة 2 للأرض -->
+                    <img src="/pictures/صافيتا 3.webp" width="150" alt=""> <!-- صورة 3 للأرض -->
+                </td>
+            </tr>
+            
+            <tr>
+                <td> حمص </td> <!-- مدينة حمص -->
+                <td> دكان 40 متر </td> <!-- تفاصيل الدكان -->
+                <td> 500,000 </td> <!-- الإيجار الشهري -->
+                <td> <input type="checkbox" id="checkbox7"> </td> <!-- خيار إظهار التفاصيل -->
+                <td><input type="radio" id="select-option" name="select" onchange="checkRadio()"></td> <!-- خيار اختيار -->
+            </tr>
+            <tr id="row7">
+                <td colspan="5">
+                    <p>
+                        <span>المنطقة:شارع الحضارة </span>
+                        <span>متوفر: قبو </span>
+                        <span>الطابق الأرضي </span>
+                        <span>مخدم </span>
+                        <span> ملكية: كاتب عدل</span> 
+                    </p>
+                    <img src="/pictures/حمص 7.webp" width="150" alt=""> <!-- صورة 1 للدكان -->
+                    <img src="/pictures/حمص 8.jpg" width="150" alt=""> <!-- صورة 2 للدكان -->
+                    <img src="/pictures/حمص 9.jpg" width="150" alt=""> <!-- صورة 3 للدكان -->
+                </td>
+            </tr>
+            
+            <tr>
+                <td> درعا </td> <!-- مدينة درعا -->
+                <td> شقة 4 غرف 250 متر </td> <!-- تفاصيل الشقة -->
+                <td> 550,000 </td> <!-- الإيجار الشهري -->
+                <td> <input type="checkbox" id="checkbox8"> </td> <!-- خيار إظهار التفاصيل -->
+                <td><input type="radio" id="select-option" name="select" onchange="checkRadio()"></td> <!-- خيار اختيار -->
+            </tr>
+            <tr id="row8">
+                <td colspan="5">
+                    <p>
+                        <span>المنطقة:شرقي المستشفى الوطني </span>
+                        <span>متوفر: كراج </span>
+                        <span>الطابق الرابع </span>
+                        <span>مفروشة </span>
+                        <span> ملكية: طابو</span> 
+                    </p>
+                    <img src="/pictures/درعا 1.jpg" width="150" alt=""> <!-- صورة 1 للشقة -->
+                    <img src="/pictures/درعا 2.jpg" width="150" alt=""> <!-- صورة 2 للشقة -->
+                    <img src="/pictures/درعا 3.jpg" width="150" alt=""> <!-- صورة 3 للشقة -->
+                </td>
+            </tr>
+            
+            <tr>
+                <td> حسكة </td> <!-- مدينة الحسكة -->
+                <td> شقة 3 غرف 200 متر </td> <!-- تفاصيل الشقة -->
+                <td> 300,000 </td> <!-- الإيجار الشهري -->
+                <td> <input type="checkbox" id="checkbox9"> </td> <!-- خيار إظهار التفاصيل -->
+                <td><input type="radio" id="select-option" name="select" onchange="checkRadio()"></td> <!-- خيار اختيار -->
+            </tr>
+            <tr id="row9">
+                <td colspan="5">
+                    <p>
+                        <span>المنطقة:حي الناصرة </span>
+                        <span>متوفر: ملحق </span>
+                        <span>الطابق الرابع </span>
+                        <span>إكساء ممتاز </span>
+                        <span> ملكية: من المالك</span> 
+                    </p>
+                    <img src="/pictures/حسكة 1.webp" width="150" alt=""> <!-- صورة 1 للشقة -->
+                    <img src="/pictures/حسكة 2.jpg" width="150" alt=""> <!-- صورة 2 للشقة -->
+                    <img src="/pictures/حسكة 3.jpg" width="150" alt=""> <!-- صورة 3 للشقة -->
+                </td>
+            </tr>
+            
+            <tr>
+                <td> حمص </td> <!-- مدينة حمص -->
+                <td> شقة 5 غرف 270 متر </td> <!-- تفاصيل الشقة -->
+                <td> 850,000 </td> <!-- الإيجار الشهري -->
+                <td> <input type="checkbox" id="checkbox10"> </td> <!-- خيار إظهار التفاصيل -->
+                <td><input type="radio" id="select-option" name="select" onchange="checkRadio()"></td> <!-- خيار اختيار -->
+            </tr>
+            <tr id="row10">
+                <td colspan="5">
+                    <p>
+                        <span>المنطقة:حمص القديمة </span>
+                        <span>متوفر: مسبح </span>
+                        <span>الطابق الأرضي + الطابق الأول </span>
+                        <span>مفروشة </span>
+                        <span> ملكية: طابو</span> 
+                    </p>
+                    <img src="/pictures/حمص 10.jpg" width="150" alt=""> <!-- صورة 1 للشقة -->
+                    <img src="/pictures/حمص 11.jpg" width="150" alt=""> <!-- صورة 2 للشقة -->
+                    <img src="/pictures/حمص 12.jpg" width="150" alt=""> <!-- صورة 3 للشقة -->
+                </td>
+            </tr>
+        </table>
+        <br>
+        <div id="appl">
+            <form id="con">
+                <label for="continue">متابعة</label>
+                <input type="checkbox" id="continue"> <!-- خيار متابعة -->
+            </form>
+            <!-- <button id="continue">
+                متابعة
+            </button> -->
+        </div>
+        
+        <div id="application-form">
+            <h2>نموذج طلب</h2> <!-- عنوان نموذج الطلب -->
+            <form id="myForm">
+                <label for="full-name">الاسم الكامل:</label>
+                <input type="text" id="full-name" name="full_name"> <!-- حقل الاسم الكامل -->
+    
+                <label for="national-id">الرقم الوطني:</label>
+                <input type="number" id="national-id" name="national_id" required min="10000000000" max="99999999999"> <!-- حقل الرقم الوطني مطلوب فقط -->
+    
+                <label for="date-of-birth">تاريخ الولادة:</label>
+                <input type="date" id="date-of-birth" name="date_of_birth" format="dd/mm/yyyy"> <!-- حقل تاريخ الولادة -->
+    
+                <label for="mobile-number">رقم الهاتف المحمول:</label>
+                <input type="tel" id="mobile-number" name="mobile_number" pattern="09[0-9]{8}"> <!-- حقل رقم الهاتف المحمول -->
+    
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email"> <!-- حقل البريد الإلكتروني -->
+                
+                <!-- حقل كابتشا للتحقق -->
+                <label for="captcha">رمز التحقق:</label>
+                <input type="text" id="captcha" name="captcha" required>
+                <button type="button" onclick="changeCaptcha()">تغيير الرمز</button> <!-- زر لتغيير رمز التحقق -->
+                <br/>
+                <img id="captchaImage" src="" alt="رمز التحقق"> <!-- صورة كابتشا -->
+                
+                <button type="submit">إرسال</button> <!-- زر إرسال -->
+            </form>
+        </div>
+    </div>
+    
+    <script src="myFunctions.js"></script> <!-- ربط ملف الجافاسكريبت -->
+</body>
+</html>
